@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  background-color: #575757;
+  font-family: helvetica;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #eeeeee;
+}
+
+.container{
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 1%;
+
+}
+
+.timer{
+  height: 75vh;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.timer *{
+  margin: 5%;
+}
+
+/*button styling*/
+button{
+  width: 15%;
+  height: 40px;
+  margin: 10px;
+  padding: 0px;
+  border-radius: 4px;
+  background-color: rgb(96, 189, 94);
+  transition: all 0.4s ease 0s;
+  border: none;
+  color: white;
+}
+
+button:hover{
+  background-color: rgb(0, 173, 49);
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+
+}
+
+/*svg styling*/
+#coffeebean{
+  fill: rgb(101, 56, 15);
+}
+
+.incompletestep{
+  fill: rgb(42, 42, 42);
+}
+
+.completedstep{
+  fill: rgb(130, 195, 255);
+}
+
+.hidden{
+  visibility: hidden;
+}
