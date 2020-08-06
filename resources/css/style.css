@@ -22,6 +22,7 @@ body{
   margin: 0 auto;
   flex-direction: column;
   padding: 1%;
+  padding-top: 15px;
 
 }
 
@@ -29,14 +30,18 @@ body{
   height: 75%;
   width: 60%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  padding-top: 15px;
 }
 
 .steps{
-  width: 60%;
+  width: 80%;
+}
+#stepguide{
+  padding-top: 15px;
+  padding-bottom:15px;
 }
 
 .timer *{
@@ -78,4 +83,28 @@ button:hover{
 
 .hidden{
   visibility: hidden;
+}
+
+.step{
+  flex-basis: 18%;
+}
+
+@media only screen and (max-width: 480px) {
+  body{
+    font-size: 24px;
+  }
+  .timer{
+    width: 90%;
+    height: 80%;
+    padding-top: 20%;
+  }
+  .timer *{
+    margin: 2%;
+  }
+  button{
+    width: 25%;
+  }
+  #stepguide{
+    padding: 5% 0 5% 0;
+  }
 }
